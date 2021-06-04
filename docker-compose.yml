@@ -1,0 +1,12 @@
+version: '1'
+services:
+  web:
+    image: "crearimage"
+    ports:
+      - "8080:8080"
+      - "9090:9090"
+    links:
+      - basedatos:mimariadb
+  basedatos:
+    image:
+    ports:
